@@ -1,0 +1,15 @@
+Dia,Panorama,Temperatura,Umidade,Vento,Jogar
+D1,Ensolarado,Quente,Alta,Fraco,Não
+D2,Ensolarado,Quente,Alta,Forte,Não
+D3,Nublado,Quente,Alta,Fraco,Sim
+D4,Chuvoso,Intermediária,Alta,Fraco,Sim
+D5,Chuvoso,Fria,Normal,Fraco,Sim
+D6,Chuvoso,Fria,Normal,Fraco,Não
+D7,Nublado,Fria,Normal,Forte,Sim
+D8,Ensolarado,Intermediária,Alta,Forte,Não
+D9,Ensolarado,Fria,Normal,Fraco,Sim
+D10,Chuvoso,Intermediária,Normal,Fraco,Sim
+D11,Ensolarado,Intermediária,Normal,Fraco,Sim
+D12,Nublado,Intermediária,Alta,Forte,Sim
+D13,Nublado,Quente,Normal,Fraco,Sim
+D14,Chuvoso,Intermediária,Alta,Forte,Não

@@ -1,7 +1,7 @@
 # -------------------------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------------------------
 
-naive = function(dataset, sample) {
+naiveBayes = function(dataset, sample) {
 
 	idClass = ncol(dataset)
 
@@ -24,7 +24,16 @@ naive = function(dataset, sample) {
 		prod = 1
 		for (i in 1:length(sample)) {
 			# P(a_1 | Não) * ... * P(a_n | Não)
-			prod = prod *sum(sample[i] == subset[,i]) / nrow(subset)
+
+			prob = NULL
+			if(is.numeric(subset[,i])) {
+				# probabilidade gaussiana de atributo numerico
+				prob = dnorm(x = as.numeric(sample[i]), mean = mean(subset[,i]), sd = sd(subset[,i]))
+			} else {
+				# probabilidade é uma contagem p atributo categorico
+				prob = sum(sample[i] == subset[,i]) / nrow(subset)
+			}
+			prod = prod * prob
 		}
 
 		# computar a probabilidade condicional daquele valor de classe
@@ -37,7 +46,6 @@ naive = function(dataset, sample) {
 	# retornar as contagens, mas sem escolher qual é a classe (fazer isso externamente)
 	ret = list(possible_hyp = possible_hyp, answers = answers)
 	return(ret)
-
 }
 
 # -------------------------------------------------------------------------------------------------
