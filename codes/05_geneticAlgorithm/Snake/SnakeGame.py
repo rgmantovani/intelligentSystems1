@@ -1,61 +1,63 @@
-# https://www.edureka.co/blog/snake-game-with-pygame/
-# https://www.geeksforgeeks.org/snake-game-in-python-using-pygame-module/
-
-# Using GA + NNs
-# https://davideliu.com/2020/02/03/teaching-ai-to-play-snake-with-genetic-algorithm/
-# https://ai.stackexchange.com/questions/27699/is-a-genetic-algorithm-efficient-for-a-snake-game
-# https://github.com/KacperMayday/Snake-Genetic-Algorithm
-
 # importing libraries
 import pygame
 import time
 import random
 
-snake_speed = 15
+from Colors import *
 
-# Window size
-window_x = 720
-window_y = 480
+class SnakeGame:
 
-# defining colors
-black = pygame.Color(0, 0, 0)
-white = pygame.Color(255, 255, 255)
-red = pygame.Color(255, 0, 0)
-green = pygame.Color(0, 255, 0)
-blue = pygame.Color(0, 0, 255)
+    snake_speed = 15
+    window_x = 720
+    window_y = 480
+    snake_position = []
+    snake_body = []
+    direction = None
 
-# Initialising pygame
-pygame.init()
+    def __init__(self):
+        
+        # Initialising pygame
+        pygame.init()
 
-# Initialise game window
-pygame.display.set_caption('GeeksforGeeks Snakes')
-game_window = pygame.display.set_mode((window_x, window_y))
+        # Initialise game window
+        pygame.display.set_caption('GeeksforGeeks Snakes')
+        game_window = pygame.display.set_mode((self.window_x, self.window_y))
 
-# FPS (frames per second) controller
-fps = pygame.time.Clock()
+        # FPS (frames per second) controller
+        fps = pygame.time.Clock()
 
-# defining snake default position
-snake_position = [100, 50]
+        # defining snake default position
+        self.snake_position = [100, 50]
 
-# defining first 4 blocks of snake body
-snake_body = [[100, 50],
-            [90, 50],
-            [80, 50],
-            [70, 50]
-            ]
-# fruit position
-fruit_position = [random.randrange(1, (window_x//10)) * 10,
-                random.randrange(1, (window_y//10)) * 10]
+        # defining first 4 blocks of snake body
+        self.snake_body = [[100, 50], [90, 50], [80, 50], [70, 50]]
+        
+        # fruit position
+        fruit_position = [random.randrange(1, (self.window_x//10)) * 10,
+                          random.randrange(1, (self.window_y//10)) * 10]
 
-fruit_spawn = True
+        fruit_spawn = True
 
-# setting default snake direction towards
-# right
-direction = 'RIGHT'
-change_to = direction
+        # setting default snake direction towards
+        # right
+        self.direction = 'RIGHT'
+        change_to = direction
 
-# initial score
-score = 0
+        # initial score
+        score = 0
+
+
+        pass
+
+    def runGame(self):
+        pass 
+    
+    
+
+
+
+
+
 
 # displaying Score function
 def show_score(choice, color, font, size):
