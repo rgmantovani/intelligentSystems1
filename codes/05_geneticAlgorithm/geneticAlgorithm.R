@@ -116,7 +116,7 @@ geneticAlgorithm = function(problem, pop.size = POP.SIZE, generations = GERACOES
 		all.fitness[[k+1]] = fitness.values
 		bests = c(bests, min(fitness.values))
 		average.fitness = c(average.fitness, mean(fitness.values))
-		cat(" @ best fitness: ", min(fitness.values), " @avg fitness: ", mean(average.fitness), "\n")
+		cat(" @ best fitness: ", min(fitness.values), " @avg fitness: ", mean(fitness.values), "\n")
 	}
 
 	# --------------------------------

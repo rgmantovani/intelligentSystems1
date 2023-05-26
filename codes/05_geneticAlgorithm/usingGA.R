@@ -9,7 +9,7 @@ N = 100 # qtde de numeros que queremos separar
 problema = sample(x = -1000:1000, size = N)
 
 POP.SIZE = 100
-GERACOES = 1000
+GERACOES = 2000
 
 teste = geneticAlgorithm(problem = problema, pop.size = POP.SIZE, 
 	generations = GERACOES)
@@ -25,7 +25,7 @@ colnames(df) = c("generation", "avgFitness")
 
 g = ggplot(df, aes(x = generation, y = avgFitness))
 g = g + geom_point() + geom_line()
-g
+print(g)
 
 # -------------------------------------------------------
 # -------------------------------------------------------
