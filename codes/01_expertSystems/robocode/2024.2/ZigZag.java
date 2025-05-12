@@ -1,4 +1,5 @@
-package Atividade01;
+package fazuele;
+
 import robocode.*;
 import java.awt.Color;
 import robocode.util.Utils;

@@ -4,7 +4,7 @@
 
 */
 
-package Atom;
+package fazuele;
 
 import robocode.*;
 import robocode.util.Utils;

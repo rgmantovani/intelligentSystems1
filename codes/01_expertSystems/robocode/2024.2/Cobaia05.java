@@ -1,3 +1,4 @@
+package fazuele;
 
 /**
  * NOME DO ROBO: COBAIA05
@@ -5,7 +6,6 @@
  * Julio
  * Rafael 
  */
-package c05;
 
 import robocode.HitByBulletEvent;
 import robocode.HitRobotEvent;

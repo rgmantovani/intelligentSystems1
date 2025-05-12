@@ -1,4 +1,4 @@
-package teste;
+package fazuele;
 
 import robocode.*;
 import java.awt.Color;
