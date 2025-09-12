@@ -1,0 +1,13 @@
+https://www.datacamp.com/tutorial/minimax-algorithm-for-ai-in-python
+
+https://github.com/Cledersonbc/tic-tac-toe-minimax
+
+https://github.com/techwithtim/Python-Checkers-AI
+
+https://brandonkindred.medium.com/how-to-implement-the-min-max-algorithm-in-python-570a384ed14f
+
+https://stackabuse.com/minimax-and-alpha-beta-pruning-in-python/
+
+https://www.sciencebuddies.org/science-fair-projects/project-ideas/ArtificialIntelligence_p014/artificial-intelligence/alpha-beta-connect4
+
+https://stackabuse.com/minimax-and-alpha-beta-pruning-in-python/
